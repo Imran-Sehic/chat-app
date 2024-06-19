@@ -1,6 +1,7 @@
 import axios from "axios";
+import { signupUrl } from "../../constants/urls";
 
 export const signupMutation = (username: string) =>
-  axios.post("http://localhost:3000/signup", {
+  axios.post(signupUrl, {
     username,
   });
